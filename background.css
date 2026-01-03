@@ -11,6 +11,10 @@ html, body {
   align-items: center;
 }
 
+.rotate {
+	display: none;
+}
+
 .walltop {
 	background-image: url('wall.png');
 	background-repeat: no-repeat;
@@ -80,3 +84,35 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	.rotate {
+		display: flex;
+		margin: auto;
+		position: fixed;
+		inset: 0;
+		background: rgba(0,0,0,0.8);
+		background-image: url('rotate.gif');
+		background-repeat: no-repeat;
+		background-position: center;
+		color: #fff;
+		align-items: center;
+		justify-content: center;
+		z-index: 3;
+		padding: 10px;
+	}
+	.scene {
+		filter: blur(50px);
+	}
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+	.rotate {
+		display: none;
+	}
+	.scene {
+    	filter: none;
+		pointer-events: auto;
+	}
+}
+
