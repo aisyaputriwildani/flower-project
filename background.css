@@ -91,6 +91,7 @@ background-position: -140 0;
 }
 
 .rotate.active {
+	display: flex;
 	margin: auto;
 	position: fixed;
 	inset: 0;
@@ -104,3 +105,4 @@ background-position: -140 0;
 	z-index: 999;
 	padding: 10px;
 }
+
