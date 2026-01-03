@@ -70,7 +70,7 @@ html, body {
 }
 
 .right {
-	background-position: -140 0;
+	background-position: 140 0;
 }
 
 .scene {
@@ -104,6 +104,7 @@ html, body {
 	z-index: 999;
 	padding: 10px;
 }
+
 
 
 
