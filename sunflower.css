@@ -1,0 +1,25 @@
+.sunflower {
+	background-image: url('sunflowerSpriteBig.gif');
+	position: absolute;
+	transform: translateY(20px);
+	z-index: 2;
+}
+
+#seed {
+	width: 160px;
+	height: 320px;
+	background-position: 0 0;
+}
+
+#sprout {
+	width: 160px;
+	height: 320px;
+	background-position: -160px 0;
+}
+
+#baby {
+	width: 160px;
+	height: 320px;
+	background-position: -320px 0;
+	position: absolute;
+}
